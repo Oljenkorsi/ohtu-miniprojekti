@@ -5,6 +5,7 @@ plugins {
 
 apply plugin: 'eclipse'
 apply plugin: 'jacoco'
+apply plugin: 'checkstyle'
 
 group = 'ohtu'
 version = '1.0-SNAPSHOT'
@@ -46,6 +47,10 @@ dependencies {
 test {
 	testLogging.showStandardStreams = true
     systemProperties System.getProperties()
+}
+
+checkstyle {
+    sourceSets = [project.sourceSets.main]
 }
 
 vaadinRun.classesDir = '/build/classes/'
