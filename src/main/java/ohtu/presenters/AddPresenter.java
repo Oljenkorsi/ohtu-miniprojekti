@@ -1,16 +1,17 @@
-package ohtu.views;
+package ohtu.presenters;
 
 import java.util.Map;
 
-import ohtu.data.ReferenceDAO;
+import ohtu.data.ReferenceDao;
 import ohtu.models.Reference;
+import ohtu.views.AddView;
 import ohtu.views.AddView.AddViewListener;
 
 public class AddPresenter implements AddViewListener {
 	private AddView view;
-	private ReferenceDAO dao;
+	private ReferenceDao dao;
 
-	public AddPresenter(AddView view, ReferenceDAO dao) {
+	public AddPresenter(AddView view, ReferenceDao dao) {
 		this.view = view;
 		this.dao = dao;
 

@@ -1,13 +1,14 @@
-package ohtu.views;
+package ohtu.presenters;
 
-import ohtu.data.ReferenceDAO;
+import ohtu.data.ReferenceDao;
+import ohtu.views.MainView;
 import ohtu.views.MainView.MainViewListener;
 
 public class MainPresenter implements MainViewListener {
 	private MainView view;
-	private ReferenceDAO dao;
+	private ReferenceDao dao;
 
-	public MainPresenter(MainView view, ReferenceDAO dao) {
+	public MainPresenter(MainView view, ReferenceDao dao) {
 		this.view = view;
 		this.dao = dao;
 

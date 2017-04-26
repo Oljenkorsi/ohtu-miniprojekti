@@ -11,11 +11,12 @@ import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
 
 import ohtu.data.FakeDatabase;
-import ohtu.data.ReferenceDAO;
-import ohtu.views.AddPresenter;
+import ohtu.data.ReferenceDAOImpl;
+import ohtu.data.ReferenceDao;
+import ohtu.presenters.AddPresenter;
+import ohtu.presenters.MainPresenter;
 import ohtu.views.AddView;
 import ohtu.views.AddViewImpl;
-import ohtu.views.MainPresenter;
 import ohtu.views.MainView;
 import ohtu.views.MainViewImpl;
 
@@ -27,7 +28,7 @@ public class Main extends UI {
 	protected void init(VaadinRequest vaadinRequest) {
 		getPage().setTitle("Main page - Title");
 		
-		ReferenceDAO dao = new ReferenceDAO(new FakeDatabase());
+		ReferenceDao dao = new ReferenceDAOImpl(new FakeDatabase());
 
 		MainView mainView = new MainViewImpl();
 		new MainPresenter(mainView, dao);

@@ -52,5 +52,3 @@ test {
 checkstyle {
     sourceSets = [project.sourceSets.main]
 }
-
-vaadinRun.classesDir = '/build/classes/'

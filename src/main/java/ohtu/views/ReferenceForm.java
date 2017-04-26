@@ -26,6 +26,7 @@ public class ReferenceForm extends VerticalLayout {
 		fields = new ArrayList<>();
 		fieldNames.forEach(s -> fields.add(new TextField(s)));
 		fields.forEach(f -> addComponent(f));
+                send.setId("addRef");
 		addComponent(send);
 	}
 

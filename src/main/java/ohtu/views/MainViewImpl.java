@@ -23,7 +23,8 @@ public class MainViewImpl extends VerticalLayout implements MainView {
 
 	private Button addButton;
         private ExportButton exportButton;
-	private HorizontalLayout layout;
+	private VerticalLayout layout;
+        private HorizontalLayout buttonLayout;
 	private Grid<Reference> grid;
 	private MainViewListener listener;
 
@@ -33,8 +34,8 @@ public class MainViewImpl extends VerticalLayout implements MainView {
                 exportButton = new ExportButton();
 		
 		grid = new Grid<>();
-
-		layout = new HorizontalLayout(grid, addButton, exportButton);
+                buttonLayout = new HorizontalLayout(addButton, exportButton);
+		layout = new VerticalLayout(buttonLayout, grid);
 		layout.setSizeFull();
 		grid.setSizeFull();
 		layout.setExpandRatio(grid, 1);

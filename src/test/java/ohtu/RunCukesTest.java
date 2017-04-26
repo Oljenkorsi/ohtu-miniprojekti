@@ -7,8 +7,8 @@ import org.junit.ClassRule;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty"})
+@CucumberOptions(plugin = {"pretty"}, features = {"src/test/resources/features"})
 public class RunCukesTest {
-	//@ClassRule
-	//public static ServerRule server = new ServerRule();
+	@ClassRule
+	public static ServerRule server = new ServerRule();
 }
