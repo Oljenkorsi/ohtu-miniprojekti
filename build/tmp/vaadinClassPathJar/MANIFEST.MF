@@ -1,0 +1,73 @@
+Manifest-Version: 1.0
+Class-Path: file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/f
+ i.jasoft.plugin/gradle-vaadin-plugin/1.1.9/3834f8cce31f138a29fb069fa7
+ 7f6c65269350a3/gradle-vaadin-plugin-1.1.9.jar file:/C:/Users/pullis/.
+ gradle/caches/modules-2/files-2.1/fish.payara.extras/payara-embedded-
+ web/4.1.1.164/aadc9b1b96531d96416865d8f7ffb3daf209791/payara-embedded
+ -web-4.1.1.164.jar file:/C:/Users/pullis/.gradle/caches/modules-2/fil
+ es-2.1/com.vaadin/vaadin-client-compiled/8.0.5/7c518172aea860f9784353
+ 31b618ac554ad3ca9e/vaadin-client-compiled-8.0.5.jar file:/C:/Users/pu
+ llis/.gradle/caches/modules-2/files-2.1/com.github.jsimone/webapp-run
+ ner/8.5.11.3/16054a160c454e65c65c2236a18a202451a37085/webapp-runner-8
+ .5.11.3.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/
+ org.apache.tomcat.embed/tomcat-embed-core/8.5.11/72761f51fc7cef3ee19d
+ 4aafc7adc605df9f611f/tomcat-embed-core-8.5.11.jar file:/C:/Users/pull
+ is/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-
+ embed-logging-juli/8.5.2/eb8d86e9972274272133c73a976ea744d9086cf1/tom
+ cat-embed-logging-juli-8.5.2.jar file:/C:/Users/pullis/.gradle/caches
+ /modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-jasper/8.5.
+ 11/2b53bb3995fee912b4466bd03cd1040e2d7e4897/tomcat-embed-jasper-8.5.1
+ 1.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.ap
+ ache.tomcat/tomcat-jasper/8.5.11/8427564a815f30317d1b3e305fa0f30b2058
+ 9e32/tomcat-jasper-8.5.11.jar file:/C:/Users/pullis/.gradle/caches/mo
+ dules-2/files-2.1/org.apache.tomcat/tomcat-jasper-el/8.5.11/f1f089343
+ 06df5ccf4a96152ef95b6284c3739fb/tomcat-jasper-el-8.5.11.jar file:/C:/
+ Users/pullis/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tom
+ cat-jsp-api/8.5.11/c99b2ed8354556a5885bb543a9b6c6ebdff1bf94/tomcat-js
+ p-api-8.5.11.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files
+ -2.1/org.apache.tomcat.embed/tomcat-embed-websocket/8.5.11/dfa65e7857
+ d46630761c0571758a56f7cbd1e9ba/tomcat-embed-websocket-8.5.11.jar file
+ :/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com.beust/jcomma
+ nder/1.48/bfcb96281ea3b59d626704f74bc6d625ff51cbce/jcommander-1.48.ja
+ r file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/commons-io
+ /commons-io/2.5/2852e6e05fbb95076fc091f6d1780f1f8fe35e0f/commons-io-2
+ .5.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.a
+ pache.tomcat.embed/tomcat-embed-el/8.5.11/60253815b897166903bf5ec4121
+ 9c5bb15333a69/tomcat-embed-el-8.5.11.jar file:/C:/Users/pullis/.gradl
+ e/caches/modules-2/files-2.1/org.eclipse.jdt.core.compiler/ecj/4.5.1/
+ bee1367ac12fb6a20b422ff8711ebeb4f0a42316/ecj-4.5.1.jar file:/C:/Users
+ /pullis/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-s
+ ervlet-api/8.5.11/41030742a5f4df5ea125e0dabca7a027daaa5a4a/tomcat-ser
+ vlet-api-8.5.11.jar file:/C:/Users/pullis/.gradle/caches/modules-2/fi
+ les-2.1/org.apache.tomcat/tomcat-juli/8.5.11/fa0b261ce002175b65ebb6ae
+ 8eb4345cb7e57da3/tomcat-juli-8.5.11.jar file:/C:/Users/pullis/.gradle
+ /caches/modules-2/files-2.1/org.apache.tomcat/tomcat-el-api/8.5.11/85
+ 2cbcf336417dc85bbd41564f6c73d2dee1a402/tomcat-el-api-8.5.11.jar file:
+ /C:/Users/pullis/.gradle/caches/modules-2/files-2.1/org.apache.tomcat
+ /tomcat-api/8.5.11/3400a9d5d50d9aae375ba4499b5aa21d452765af/tomcat-ap
+ i-8.5.11.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1
+ /org.apache.tomcat/tomcat-util-scan/8.5.11/f3c7dc0d89c345001c09df8034
+ ca491cc7cef073/tomcat-util-scan-8.5.11.jar file:/C:/Users/pullis/.gra
+ dle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-util/8.5.11/1
+ 5bb54a0e015cc3abe981afb4ce66b518787c55a/tomcat-util-8.5.11.jar file:/
+ C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-
+ server/8.0.5/d34b0f133cf5405a9b22bc2c4928427aed613893/vaadin-server-8
+ .0.5.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/com
+ .vaadin/vaadin-themes/8.0.5/2b2cdc03fc5e9ceedc26cf7f1f53f5f39bbd8003/
+ vaadin-themes-8.0.5.jar file:/C:/Users/pullis/.gradle/caches/modules-
+ 2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b
+ 2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar file:/C:/Users/pull
+ is/.gradle/caches/modules-2/files-2.1/com.vaadin/vaadin-sass-compiler
+ /0.9.13/663088831773c35e033ea1538b96d817ce7cef52/vaadin-sass-compiler
+ -0.9.13.jar file:/C:/Users/pullis/.gradle/caches/modules-2/files-2.1/
+ com.vaadin/vaadin-shared/8.0.5/aa77b5fc463eea1e062ccd4786d1ad0b4638c6
+ e0/vaadin-shared-8.0.5.jar file:/C:/Users/pullis/.gradle/caches/modul
+ es-2/files-2.1/org.jsoup/jsoup/1.8.3/65fd012581ded67bc20945d85c32b459
+ 8c3a9cf1/jsoup-1.8.3.jar file:/C:/Users/pullis/.gradle/caches/modules
+ -2/files-2.1/com.googlecode.gentyref/gentyref/1.2.0/8d776d0a52d707fa2
+ 9c7449ddd4d102ac7002d6c/gentyref-1.2.0.jar file:/C:/Users/pullis/.gra
+ dle/caches/modules-2/files-2.1/org.w3c.css/sac/1.3/cdb2dcb4e22b83d6b3
+ 2b93095f644c3462739e82/sac-1.3.jar file:/C:/Users/pullis/.gradle/cach
+ es/modules-2/files-2.1/com.vaadin.external.flute/flute/1.3.0.gg2/48e8
+ c3a235544a0506ca3081519ce114169242a/flute-1.3.0.gg2.jar
+

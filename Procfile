@@ -1,0 +1,1 @@
+web: java -jar build/lib/webapp-runner-8.5.11.3.jar --port $PORT build/libs/*.war
