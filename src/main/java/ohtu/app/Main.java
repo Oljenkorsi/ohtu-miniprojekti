@@ -15,6 +15,7 @@ import ohtu.data.ReferenceDAOImpl;
 import ohtu.data.ReferenceDao;
 import ohtu.presenters.AddPresenter;
 import ohtu.presenters.MainPresenter;
+import ohtu.utilities.Fields;
 import ohtu.views.AddView;
 import ohtu.views.AddViewImpl;
 import ohtu.views.MainView;
@@ -23,27 +24,34 @@ import ohtu.views.MainViewImpl;
 @SuppressWarnings("serial")
 @PreserveOnRefresh
 public class Main extends UI {
+    
+    Fields fields;
+    ReferenceDao dao;
+    MainView mainView;
+    AddView addView;
+    Navigator navigator;
 
-	@Override
-	protected void init(VaadinRequest vaadinRequest) {
-		getPage().setTitle("Main page - Title");
-		
-		ReferenceDao dao = new ReferenceDAOImpl(new FakeDatabase());
+    @Override
+    protected void init(VaadinRequest vaadinRequest) {
+        getPage().setTitle("Main page - Title");
+        initValues();
+        new MainPresenter(mainView, dao);
+        new AddPresenter(addView, dao);
+        navigator.addView("", mainView);
+        navigator.addView("addRefs", addView);
+    }
 
-		MainView mainView = new MainViewImpl();
-		new MainPresenter(mainView, dao);
-		
-		AddView addView = new AddViewImpl();
-		new AddPresenter(addView, dao);
-	
-		Navigator navigator = new Navigator(this, this);
-		navigator.addView("", mainView);
-		navigator.addView("addRefs", addView);
-	}
+    private void initValues() {
+        fields = new Fields();
+        dao = new ReferenceDAOImpl(new FakeDatabase());
+        mainView = new MainViewImpl();
+        addView = new AddViewImpl();
+        navigator = new Navigator(this, this);
+    }
 
-	@WebServlet(urlPatterns = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(ui = Main.class, productionMode = false)
-	public static class MyUIServlet extends VaadinServlet {
-	}
+    @WebServlet(urlPatterns = "/*", asyncSupported = true)
+    @VaadinServletConfiguration(ui = Main.class, productionMode = false)
+    public static class MyUIServlet extends VaadinServlet {
+    }
 
 }

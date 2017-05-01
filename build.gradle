@@ -7,6 +7,16 @@ apply plugin: 'eclipse'
 apply plugin: 'jacoco'
 apply plugin: 'checkstyle'
 
+task stage(dependsOn: ['build', 'clean'])
+build.mustRunAfter clean
+
+task copyToLib(type: Copy) {
+    into "$buildDir/lib"
+    from(configurations.compile)
+}
+
+stage.dependsOn(copyToLib)
+
 group = 'ohtu'
 version = '1.0-SNAPSHOT'
 
@@ -46,9 +56,12 @@ dependencies {
     testCompile 'org.eclipse.jetty:jetty-servlet:9.4.3.v20170317'
     testCompile 'com.vaadin:vaadin-server:8.0.5'
     testCompile 'com.vaadin:vaadin-themes:8.0.5'
+
+    compile group: 'com.vaadin', name: 'vaadin-client-compiled', version: '8.0.5'
+    compile group: 'com.github.jsimone', name: 'webapp-runner', version: '8.5.11.3'
 }
 
 test {
 	testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
+     systemProperties System.getProperties()
 }
