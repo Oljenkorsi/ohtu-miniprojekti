@@ -83,7 +83,7 @@ public class Stepdefs {
     @Then("^reference is not added$")
     public void reference_is_not_added() throws Throwable {
         Thread.sleep(1000);
-        assertTrue(driver.getPageSource().contains("Failed to save a reference"));
+        pageHasContent("Failed to save a reference");
     }
     
     private void pageHasContent(String content) {
