@@ -33,6 +33,7 @@ public class MainViewImpl extends VerticalLayout implements MainView {
         addButton.setId("addButton");
 
         exportButton = new ExportButton();
+        exportButton.setId("exportButton");
 
         grid = new Grid<>();
         buttonLayout = new HorizontalLayout(addButton, exportButton);

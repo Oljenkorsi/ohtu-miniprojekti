@@ -72,5 +72,7 @@ public class ReferenceTest {
 	@Test
 	public void bibtexGenerationWorks() {
 		assertTrue(ref.toBibTex().startsWith("@book{SWEBOK,"));
+		assertFalse(ref.toBibTex().contains("type={"));
+		assertFalse(ref.toBibTex().contains("key={"));
 	}
 }

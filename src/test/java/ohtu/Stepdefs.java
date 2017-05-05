@@ -47,6 +47,21 @@ public class Stepdefs {
         } catch (InterruptedException e) {
         }
     }
+    
+    @Given("^export BibTex is selected$")
+    public void export_bibtex_is_selected() throws Throwable {
+        try {
+            WebElement element = driver.findElement(By.id("exportButton"));
+            element.click();
+        } catch (NoSuchElementException e) {
+            fail("No such element");
+        }
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+        }
+    }
 
     @When("^valid reference information is entered$")
     public void enter_valid_information() throws Throwable {
@@ -60,7 +75,7 @@ public class Stepdefs {
     }
     
     @When("^invalid reference information is entered$")
-    public void enter_invalid_information() throws Throwable {
+    public void enter_invalid_book_information() throws Throwable {
         sendKeysToElement("gwt-uid-5", "anni puurunen");
         sendKeysToElement("gwt-uid-7", "otsikko");
         sendKeysToElement("gwt-uid-9", "journal");

@@ -69,7 +69,9 @@ public class Reference {
 	public String toBibTex() {
 		StringBuilder sb = new StringBuilder("@" + getType() + "{" + getKey() + ",\n");
 		
-		fields.forEach((k, v) -> sb.append("\t" + k + "=" + "{" + Encode.toBibTex(v) + "},\n"));
+		fields.entrySet().stream()
+			.filter(e->!e.getKey().equals("type") && !e.getKey().equals("key"))
+			.forEach(e->sb.append("\t" + e.getKey() + "=" + "{" + Encode.toBibTex(e.getValue()) + "},\n"));
 		
 		return sb.append("}").toString();
 	}
