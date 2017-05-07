@@ -31,7 +31,7 @@ public class Stepdefs {
     public void tearDown() {
         driver.quit();
     }
-    
+ 
     @Given("^add references is selected$")
     public void add_references_is_selected() throws Throwable {    
         
@@ -75,7 +75,7 @@ public class Stepdefs {
     }
     
     @When("^invalid reference information is entered$")
-    public void enter_invalid_book_information() throws Throwable {
+    public void enter_invalid_information() throws Throwable {
         sendKeysToElement("gwt-uid-5", "anni puurunen");
         sendKeysToElement("gwt-uid-7", "otsikko");
         sendKeysToElement("gwt-uid-9", "journal");
